@@ -1,0 +1,126 @@
+.boardContentPosition {
+    display: flex;
+}
+
+.boardContentStyle {
+    width: 100%;
+    height: 80%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.boardBg3 {
+    background-color: rgba(0, 255, 255, 0.100);
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 4px 2px 5px 0px rgb(143, 143, 143);
+    filter: brightness(97%);
+}
+
+.boardBg4 {
+    background-color: rgba(0, 210, 0, 0.100);
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 4px 2px 5px 0px rgb(143, 143, 143);
+    filter: brightness(97%);
+}
+
+.boardBg2 {
+    background-color: rgba(255, 255, 0, 0.100);
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 4px 2px 5px 0px rgb(143, 143, 143);
+    filter: brightness(97%);
+}
+
+.boardBg1 {
+    background-color: rgba(255, 0, 0, 0.100);
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    box-shadow: 4px 2px 5px 0px rgb(143, 143, 143);
+    filter: brightness(97%);
+}
+
+.boardBg1:hover {
+    filter: brightness(100%);
+}
+
+.boardBg2:hover {
+    filter: brightness(100%);
+}
+
+.boardBg3:hover {
+    filter: brightness(100%);
+}
+
+.boardBg4:hover {
+    filter: brightness(100%);
+}
+
+.boardtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+}
+
+.boardCard {
+    border: 1px solid #b3b3b3;
+    background: rgba(255, 255, 255, 0.651);
+    margin: 5px;
+    padding: 5px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.toDoposition {
+    background-color: white;
+    border: 1px dotted #b3b3b3;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 0.8em;
+    height: 141px;
+    display: flex;
+    justify-content: space-between;
+    filter: brightness(97%);
+    cursor: pointer;
+}
+
+.toDoposition:hover {
+    filter: brightness(100%);
+}
+
+.tododescrip {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 60px;
+    width: 105%;
+}
+
+.empImgboard {
+    position: absolute;
+    top: 15px;
+    right: 4px;
+    font-size: 0.8em;
+}
+
+.boardbtnimg {
+    width: 23px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.boardbtnimg:hover {
+    opacity: 0.8;
+}

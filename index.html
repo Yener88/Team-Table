@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/task.css">
+    <link rel="stylesheet" href="css/backlog.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/imprintandpolicy.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="./js/mini_backend.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/backlog.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/help.js"></script>
+    <script src="js/imprintandpolicy.js"></script>
+    <title>Team-Table</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?tracking=1&thirdparty=1&always=1"></script>
+</head>
+
+<body onload="includeHTML(), init(), initBoard()">
+    <div class="main">
+        <div class="mainposition">
+            <div id="navbar" class="navbar dnone">
+                <div w3-include-html="templates/header.html"></div>
+                <footer class="footerDiv">
+                    <div w3-include-html="templates/footer.html"></div>
+                </footer>
+            </div>
+            <div id="mainContent" class="content">
+                <div class="board">
+                    <div class="headline">
+                        <div class="headlinetitle">START</div>
+                        <span class="headlinetitletext">Learning Managment System Project</span>
+                    </div>
+                    <div id="responsivMain" class="d-none">
+                        <div class="responsivPosition">
+                            <div onclick="responsiveClose()" class="responsiveClose"><img class="responsivCloseImg"
+                                    src="img/close.png"></div>
+                            <div w3-include-html="templates/header.html"></div>
+                            <footer class="footerDiv">
+                                <div w3-include-html="templates/footer.html"></div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="responsivMenu d-none" onclick="responsiveRender()"><img class="responsivImg"
+                            src="img/menu.png">
+                    </div>
+                    <div class="taskinnerwindow">
+                        <div class="wtextposition">
+                            <div>
+                                <div class="wtitle">Welcome to Team-Table!</div><br><br><br><br>
+                                <div class="wbtntext">Start on Board and create your first Task!<br><br>
+                                    <button class="wbtn" onclick="renderTask()">Add Task</button>
+                                </div>
+                            </div>
+                            <div class="wtext">This page is written in the Develeoper-Academie&copy; 2022 by Jan Razny,
+                                Patrick Heusinger and Yener Bas.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
