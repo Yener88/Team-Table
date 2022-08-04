@@ -1,0 +1,91 @@
+.blContent {
+    height: 78vh;
+}
+
+.blBacklog {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 78vh;
+}
+
+.blHeadlines {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: default;
+    padding-right: 202px;
+    padding-left: 38px;
+}
+
+.backlogCard {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b3b3b3;
+    background: white;
+    height: 60px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    filter: brightness(97%);
+    cursor: pointer;
+}
+
+.backlogCard:hover {
+    filter: brightness(100%);
+}
+
+.blCard1 {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-top: 15px;
+    align-items: center;
+    font-size: 1.2em;
+    margin-left: 65px;
+    margin-right: 130px;
+}
+
+.deletebtn {
+    border: none;
+    background: none;
+}
+
+.deletebtnimg {
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 3px;
+}
+
+.deletebtnimg:hover {
+    opacity: 0.8;
+}
+
+.boardbtn {
+    border: none;
+    background: none;
+}
+
+.blCard2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.empImgBl {
+    width: 40px;
+    border-radius: 40px;
+
+}
+
+.invisible {
+    color: rgba(255, 0, 0, 0);
+}
+
+.blCardtitle {
+    border-bottom: 1px solid #80808038;
+}

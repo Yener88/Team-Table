@@ -1,0 +1,223 @@
+.taskinnerwindow {
+    background-color: rgba(0, 102, 255, 0.05);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px #003cff1f;
+    min-height: 80vh;
+    border: 1px solid rgba(0, 60, 255, 0.1);
+}
+
+.taskinnerwindowtitle {
+    font-size: 1.0em;
+    font-weight: bold;
+    color: rgb(33, 45, 113);
+    cursor: default;
+}
+
+.taskmargin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.boardRow1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.boardRow2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.boardRow3 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 265px;
+}
+
+.dflexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    min-width: 45%;
+}
+
+#cancelTask {
+    background: none;
+    border: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: rgb(33, 45, 113);
+    cursor: pointer;
+    margin-right: 20px;
+    font-family: 'Sora', sans-serif;
+}
+
+#cancelTask:hover {
+    background-color: rgb(30, 49, 144);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 0px rgb(30, 49, 144);
+    color: rgba(255, 143, 143, 0.644);
+
+}
+
+#createTask {
+    border: none;
+    background-color: rgb(30, 49, 144);
+    color: white;
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgb(63, 63, 63);
+    cursor: pointer;
+    font-family: 'Sora', sans-serif;
+    filter: brightness(80%);
+}
+
+#createTask:hover {
+    filter: brightness(100%);
+}
+
+.taskinputstyle {
+    height: 50px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    outline: none;
+    color: #363636;
+    font-family: 'Sora', sans-serif;
+    font-size: 1em;
+    background-color: rgb(240, 240, 240);
+}
+
+.taskinputstyletext {
+    outline: none;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    height: 170px;
+    font-size: 1em;
+    font-family: 'Sora', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    background-color: rgb(240, 240, 240);
+    resize: none;
+}
+
+.left select {
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.right select {
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.btnTask {
+    text-align: end;
+}
+
+.urgencyhigh {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.urgencymedium {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+.urgencylow {
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+.multiselect {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.selectBox {
+    position: relative;
+    filter: brightness(75%);
+}
+
+.selectBox:hover {
+    filter: brightness(100%);
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    cursor: pointer;
+}
+
+
+#checkboxes {
+    display: none;
+    height: 115px;
+    width: 100px;
+    border: none;
+    background: white;
+    border-radius: 18%;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background: rgba(34, 50, 139, 0.2);
+    border-radius: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.checkboximg {
+    border: 1px solid black;
+    width: 23px;
+    border-radius: 40px;
+}
+
+#employer {
+    font-size: 2.5em !important;
+    background-color: rgb(30, 49, 144);
+    color: white;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px 0px rgb(63 63 63);
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#showSucces {
+    color: green;
+}
