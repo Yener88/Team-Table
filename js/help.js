@@ -36,6 +36,7 @@ function renderHelp() {
                     <div class="tutorialstyle">                
                         Click the following link <br>to download a tutorial for use.<br><br>
                         <a class="tutorialstylelink" href="http://yener-bas.developerakademie.net/Gruppenarbeit/tutorial_de.pdf" target="_blank">download tutorial german</a>
+                        <br><br><br>
                         <a class="tutorialstylelink" href="http://yener-bas.developerakademie.net/Gruppenarbeit/tutorial_en.pdf" target="_blank">download tutorial english</a>
                         <br><br>
                         <div>or u can send us your question!</div><br>
