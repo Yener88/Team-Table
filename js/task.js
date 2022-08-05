@@ -49,6 +49,9 @@ async function addTask() {
         'employer': employer,
         'employerImg': img
     };
+    if(this.newTask.length == 0) {
+        alert('please fill up')
+    }
     allTasks.push(newTask);
     await backend.setItem('allTasks', JSON.stringify(allTasks));
     checkbox();
