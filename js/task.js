@@ -49,14 +49,32 @@ async function addTask() {
         'employer': employer,
         'employerImg': img
     };
-    allTasks.push(newTask);
     await backend.setItem('allTasks', JSON.stringify(allTasks));
     checkbox();
-    cleanValues();
     console.log(allTasks);
-    showSuccess();
+    checkValue();
+
 }
 
+function checkValue() {
+    if (document.getElementById('taskTitle').value == 0) {
+        alert("please fill up title!");
+    } else if (document.getElementById('taskDate').value == 0) {
+        alert("please fill up date!");
+    } else if (document.getElementById('taskDescription').value == 0) {
+        alert("please fill up description!");
+    } else if (document.getElementById('urgency').value == 0) {
+        alert("please fill up urgency!");
+    } else if (document.getElementById('category').value == 0) {
+        alert("please fill up category!");
+    } else if (document.getElementById('employer').value == 0) {
+        alert("please fill up category!");
+    } else {
+        allTasks.push(newTask);
+        showSuccess();
+        cleanValues();
+    }
+}
 
 function showSuccess() {
     document.getElementById('showSucces').innerHTML = `
