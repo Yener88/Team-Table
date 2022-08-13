@@ -49,37 +49,39 @@ async function addTask() {
         'employer': employer,
         'employerImg': img
     };
+    showSuccess();
+    cleanValues();
+    allTasks.push(newTask);
     await backend.setItem('allTasks', JSON.stringify(allTasks));
     checkbox();
-    console.log(allTasks);
-    checkValue();
-
 }
 
-function checkValue() {
-    if (document.getElementById('taskTitle').value == 0) {
-        alert("please fill up title!");
-    } else if (document.getElementById('taskDate').value == 0) {
-        alert("please fill up date!");
-    } else if (document.getElementById('taskDescription').value == 0) {
-        alert("please fill up description!");
-    } else if (document.getElementById('urgency').value == 0) {
-        alert("please fill up urgency!");
-    } else if (document.getElementById('category').value == 0) {
-        alert("please fill up category!");
-    } else if (document.getElementById('employer').value == 0) {
-        alert("please fill up category!");
-    } else {
-        allTasks.push(newTask);
-        showSuccess();
-        cleanValues();
-    }
-}
+// function checkValue() {
+//     if (document.getElementById('taskTitle').value == 0) {
+//         alert("please fill up title!");
+//     } else if (document.getElementById('taskDate').value == 0) {
+//         alert("please fill up date!");
+//     } else if (document.getElementById('taskDescription').value == 0) {
+//         alert("please fill up description!");
+//     } else if (document.getElementById('urgency').value == 0) {
+//         alert("please fill up urgency!");
+//     } else if (document.getElementById('category').value == 0) {
+//         alert("please fill up category!");
+//     } else if (document.getElementById('employer').value == 0) {
+//         alert("please fill up category!");
+//     } else {
+
+//     }
+// }
 
 function showSuccess() {
     document.getElementById('showSucces').innerHTML = `
     successfully! 
     `;
+    showCheckboxes();
+    setTimeout(() => {
+        document.getElementById('showSucces').innerHTML = ``;
+    }, 1500);
 }
 
 
@@ -140,7 +142,7 @@ function renderTask() {
     emptyInner('mainContent');
     document.getElementById('mainContent').innerHTML = /*html*/ `
         <div class="board">
-            <form onsubmit="return false">
+            <form onsubmit="addTask(); return false">
                 <div class="headline">
                     <div class="headlinetitle">ADD TASK<span id="showSucces"></span></div>
                     <span class="headlinetitletext">Learning Managment System Project</span>
@@ -209,7 +211,7 @@ function renderTask() {
                         <div class="right">
                             <span class="taskinnerwindowtitle">ASSIGNED TO</span>
                             <div class="multiselect">
-                                <div class="selectBox" onclick="showCheckboxes()">
+                                <div class="selectBox" onclick="showCheckboxes()" required>
                                     <div id="employer">
                                     +
                                     </div>
@@ -229,7 +231,7 @@ function renderTask() {
                             <div class="employers"></div>
                             <div class="btnTask">
                                 <button onclick="cleanValues()"class="taskmargin" id="cancelTask">CANCEL</button>
-                                <button onclick="addTask()" id="createTask" required>CREATE TASK</button>
+                                <button type="submit" id="createTask" required>CREATE TASK</button>
                             </div>
                         </div>
                     </div>
